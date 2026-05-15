@@ -15,6 +15,7 @@
   <!-- css files -->
   <link rel="stylesheet" href="<?= $basePath ?>/assets/css/styles.css">
   <link rel="stylesheet" href="<?= $basePath ?>/assets/css/responsive.css">
+  <link rel="stylesheet" href="<?= $basePath ?>/assets/css/animations.css">
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,5 +28,8 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Dark Mode Support -->
+  <link rel="stylesheet" href="<?= $basePath ?>/assets/css/darkmode.css">
+  <script src="<?= $basePath ?>/assets/js/darkmode.js" defer></script>
 
 </head>

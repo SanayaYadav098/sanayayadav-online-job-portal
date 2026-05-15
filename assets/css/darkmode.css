@@ -1,0 +1,366 @@
+/* =============================================
+   DARK MODE THEME STYLES
+   ============================================= */
+
+:root {
+  /* Light mode colors (default) */
+  --primary-color: #007bff;
+  --secondary-color: #667eea;
+  --accent-color: #764ba2;
+  --background-color: #ffffff;
+  --surface-color: #f8f9fa;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --border-color: #dddddd;
+  --hover-color: #f0f0f0;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --info-color: #17a2b8;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --card-hover-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Dark mode color scheme */
+body.dark-mode {
+  --primary-color: #4a9eff;
+  --secondary-color: #8fb3ff;
+  --accent-color: #a571d8;
+  --background-color: #1a1a1a;
+  --surface-color: #2d2d2d;
+  --text-color: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #404040;
+  --hover-color: #3a3a3a;
+  --success-color: #4caf50;
+  --warning-color: #ffb74d;
+  --danger-color: #ef5350;
+  --info-color: #29b6f6;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  --card-hover-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* Apply dark mode to all elements */
+body.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark-mode a {
+  color: var(--primary-color);
+}
+
+body.dark-mode a:hover {
+  color: var(--secondary-color);
+}
+
+/* Dark mode for common elements */
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="password"],
+body.dark-mode input[type="date"],
+body.dark-mode input[type="tel"],
+body.dark-mode input[type="number"],
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+body.dark-mode button,
+body.dark-mode .btn {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+body.dark-mode button:hover,
+body.dark-mode .btn:hover {
+  filter: brightness(1.1);
+}
+
+/* Cards and containers */
+body.dark-mode .card,
+body.dark-mode .form-entry,
+body.dark-mode .interview-card,
+body.dark-mode .job-recommendation-card {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+/* Navigation */
+body.dark-mode #header,
+body.dark-mode nav,
+body.dark-mode .navbar {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .nav-link {
+  color: var(--text-color);
+}
+
+body.dark-mode .navbar a:hover,
+body.dark-mode .nav-link:hover {
+  color: var(--primary-color);
+  background-color: var(--hover-color);
+}
+
+/* Dropdown menus */
+body.dark-mode .dropdown-content {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+body.dark-mode .dropdown-content a {
+  color: var(--text-color);
+}
+
+body.dark-mode .dropdown-content a:hover {
+  background-color: var(--hover-color);
+}
+
+/* Sidebar */
+body.dark-mode .dashboard-sidebar,
+body.dark-mode .tools-sidebar {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+body.dark-mode .sidebar-menu a {
+  color: var(--text-color);
+}
+
+body.dark-mode .sidebar-menu a:hover,
+body.dark-mode .sidebar-menu a.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Tables */
+body.dark-mode table {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+body.dark-mode th {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+body.dark-mode tr:hover {
+  background-color: var(--hover-color);
+}
+
+/* Forms */
+body.dark-mode .form-section {
+  border-color: var(--border-color);
+}
+
+body.dark-mode label {
+  color: var(--text-color);
+}
+
+/* Preview areas */
+body.dark-mode .preview-document {
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+/* Status badges */
+body.dark-mode .status-badge,
+body.dark-mode .badge {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Alert boxes */
+body.dark-mode .alert {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+body.dark-mode .alert-warning {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-color: var(--warning-color);
+  color: var(--warning-color);
+}
+
+body.dark-mode .alert-danger {
+  background-color: rgba(220, 53, 69, 0.1);
+  border-color: var(--danger-color);
+  color: var(--danger-color);
+}
+
+body.dark-mode .alert-success {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+/* Modal/Dialog */
+body.dark-mode .modal,
+body.dark-mode .dialog {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark-mode .modal-content,
+body.dark-mode .dialog-content {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+/* Header styling in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--text-color);
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+/* Scrollbar styling in dark mode */
+body.dark-mode::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+  background: var(--surface-color);
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 6px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.dark-mode-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Smooth transitions for dark mode */
+body,
+body * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Special case: images should not transition */
+img {
+  transition: none !important;
+}
+
+/* Code blocks */
+body.dark-mode code,
+body.dark-mode pre {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+/* Selection color in dark mode */
+body.dark-mode ::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+body.dark-mode ::-moz-selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Gradients in dark mode - subtle adjustments */
+body.dark-mode .gradient-primary {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+}
+
+/* Interview and card specific dark mode */
+body.dark-mode .interview-header {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+}
+
+body.dark-mode .job-recommendation-card {
+  box-shadow: var(--card-shadow);
+}
+
+body.dark-mode .job-recommendation-card:hover {
+  box-shadow: var(--card-hover-shadow);
+}
+
+/* Highlighted elements */
+body.dark-mode .highlight {
+  background-color: var(--surface-color);
+  border-left: 3px solid var(--primary-color);
+  padding-left: 1rem;
+}
+
+/* Reduced opacity for secondary text in dark mode */
+body.dark-mode .secondary-text {
+  color: var(--text-secondary);
+}
+
+/* Loading spinner in dark mode */
+body.dark-mode .spinner {
+  border-color: var(--border-color);
+  border-top-color: var(--primary-color);
+}
+
+/* Focus states */
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus,
+body.dark-mode button:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.1);
+}

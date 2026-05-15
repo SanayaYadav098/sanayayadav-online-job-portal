@@ -7,15 +7,15 @@ $basePath = count($pathParts) > 1 ? '/' . $pathParts[0] : '';
     <div class="header-left">
       <div class="logo-container">
         <img src="<?= $basePath ?>/assets/images/logo.png" alt="logo">
-        <h3>Job Portal</h3>
+        <h3></h3>
       </div>
       <nav class="navbar">
         <ul>
           <li><a href="<?= $basePath ?>/index.php">Home</a> </li>
           <li><a href="<?= $basePath ?>/findJobs.php">Find Jobs</a></li>
           <li><a href="<?= $basePath ?>/browseCompanies.php">Browse Companies</a></li>
-          <!-- <li><a href="">About Us</a></li> -->
-          <!-- <li><a href="">Contact Us</a></li> -->
+          <li><a href="">About Us</a></li> 
+          <li><a href="">Contact Us</a></li>
         </ul>
       </nav>
     </div>
